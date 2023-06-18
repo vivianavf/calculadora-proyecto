@@ -10,49 +10,24 @@
         <!-- Google Fonts -->
         <!-- MDB -->
         <!-- Custom styles -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
         <link rel="stylesheet" href="/style.css">
 
     </head>
     <body>
-        <div class="container-fluid">
-            <!-- Barra de navegación -->
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-6 col-12">
-                    <nav class="navbar navbar-light bg-light">
-                        <div class="container-fluid">
-                            <a class="navbar-brand" href="#">Calculadora</a>
-                            <button
-                                class="navbar-toggler"
-                                type="button"
-                                data-mdb-toggle="collapse"
-                                data-mdb-target="#navbarToggleExternalContent2"
-                                aria-controls="navbarToggleExternalContent1"
-                                aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <i class="fas fa-bars text-dark"></i>
-                            </button>
-
-                        </div>
-                    </nav>
-                    <div class="collapse" id="navbarToggleExternalContent2">
-                        <ul class="bg-light shadow-3 py-2 px-3">
-                            <li
-                                class="btn btn-link btn-block m-0 p-2 text-start text-dark">Inicio</li>
-                        </ul>
-                    </div>
-                </div>
+        <header> 
+            <div id="header">
+                <h1>Calculadora de presupuesto para una pagina web</h1>
             </div>
+        </header>
 
+        <main>
             <!-- Formulario  -->
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-6 col-12 mt-5">
                     <form id="formulario">
-
-                        <div class="row mb-4 d-flex justify-content-center">
-                            
+                        <div>                            
                             <!-- Valor por hora -->
-                            <div class="col-md-6">
-                                <div class="form-outline mb-4">
+                            <div>
+                                <div>
                                     <input type="number" id="valorPorHora"
                                         step="0.25" required="required"
                                         class="form-control" />
@@ -62,11 +37,11 @@
                             </div>
                         </div>
 
-                        <div class="row mb-4 d-flex justify-content-center">
+                        <div>
                             
                             <!-- Elemento 1: Diseño de interfaz -->
-                            <div class="col-md-6">
-                                <div class="form-outline mb-4">
+                            <div>
+                                <div>
                                     <input type="number" id="interfazHoras"
                                         class="form-control" />
                                     <label class="form-label" for="interfazHoras">Diseño
@@ -76,8 +51,8 @@
                             
 
                             <!-- Elemento 2: Desarrollo HTML y CSS -->
-                            <div class="col-md-6">
-                                <div class="form-outline mb-4">
+                            <div>
+                                <div>
                                     <input type="number" id="front"
                                         class="form-control" />
                                     <label class="form-label" for="front">Desarrollo HTML y CSS</label>
@@ -85,8 +60,8 @@
                             </div>
 
                             <!-- Elemento 3: Javascript y APIs -->
-                            <div class="col-md-6">
-                                <div class="form-outline mb-4">
+                            <div>
+                                <div>
                                     <input type="number" id="back"
                                         class="form-control" />
                                     <label class="form-label" for="back">Javascript y APIs</label>
@@ -94,8 +69,8 @@
                             </div>
 
                             <!-- Elemento 4: Testing -->
-                            <div class="col-md-6">
-                                <div class="form-outline mb-4">
+                            <div>
+                                <div>
                                     <input type="number" id="testing"
                                         class="form-control" />
                                     <label class="form-label" for="testing">Testing</label>
@@ -106,15 +81,14 @@
                         </div>
 
                         <!-- Submit button -->
-                        <div class="row mb-4 d-flex justify-content-center">
-                            <div class="col-md-6">
-                                <button type="submit"
-                                    class="btn btn-primary btn-block">Calcular</button>
+                        <div>
+                            <div>
+                                <button type="submit">Calcular</button>
                             </div>
                         </div>
 
-                        <div class="row mb-4 d-flex justify-content-center">
-                            <div class="col-md-6">
+                        <div >
+                            <div >
                                 <input
                                     class="form-control"
                                     id="valorTotal"
@@ -127,10 +101,7 @@
                         </div>
 
                     </form>
-                </div>
-            </div>
-        </div>
-        <!-- MDB -->        
+        </main>     
 
         <!-- javascript:src public/javascript/calculadora.js -->
         <script src="script.js"></script>     
