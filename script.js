@@ -10,9 +10,8 @@ funcionPredeterminada = () => {
         back = parseInt(document.getElementById("back").value)
         testing = parseInt(document.getElementById("testing").value)
 
-        total = valorPorHora*(interfaz+front+back+testing);
+        total = valorPorHora*(interfaz+front+back+testing);       
         
-        console.log(document.getElementById("valorTotal").value)
         document.getElementById("valorTotal").value = "USD$ " + total;
 
         
